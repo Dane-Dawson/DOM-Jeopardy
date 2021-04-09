@@ -38,6 +38,7 @@ on click sets to starting point
 
 render array
 
+
 logo at the top
 
 div with empty board as main background
@@ -50,10 +51,10 @@ values on each card
 
 on click card displays question
 
-maybe set audio to play until click again
+>>!maybe set audio to play until click again
 
 on click card displays answer
 
-can notate if correct or not, adjust current earnings
+>>can notate if correct or not, adjust current earnings
 
 bonus add input field with .include
