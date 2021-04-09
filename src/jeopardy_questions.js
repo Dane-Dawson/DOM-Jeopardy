@@ -1,4 +1,4 @@
-[
+const jeopardyQuestions = [
   {
     category: "HISTORY",
     air_date: "2004-12-31",
@@ -129,3 +129,4 @@
     show_number: "4680",
   },
 ];
+
