@@ -37,3 +37,23 @@ more details button shows air date (bonus split it into legible string)
 on click sets to starting point
 
 render array
+
+logo at the top
+
+div with empty board as main background
+
+flexbox holds cards (6 categories, 5 questions each)
+
+categories at tops
+
+values on each card
+
+on click card displays question
+
+maybe set audio to play until click again
+
+on click card displays answer
+
+can notate if correct or not, adjust current earnings
+
+bonus add input field with .include
