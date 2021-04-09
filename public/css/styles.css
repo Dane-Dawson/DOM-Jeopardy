@@ -1,0 +1,33 @@
+#board-container{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jeopardy-board {
+    width: 75vw;
+    background-color: black;
+}
+
+#jeopardy-board{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    height: 100%;
+}
+
+.cat-col{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tile.category{
+    border-bottom: 5px solid black;
+}
+
+.tile{
+    background-color: rgb(14, 10, 241);
+    height: 16%;
+    border: 3px solid black;
+}
