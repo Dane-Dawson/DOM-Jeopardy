@@ -1,11 +1,11 @@
 @font-face {
     font-family: korinna;
-    src: url(Korinna-Regular.otf);
+    src: url(korinna-regular.otf);
 }
 
 @font-face {
     font-family: swiss-911;
-    src: url(swiss-911-extra-compr9c22f.ttf);
+    src: url(swiss-911.ttf);
 }
 
 #board-container{
