@@ -1,11 +1,11 @@
 @font-face {
     font-family: korinna;
-    src: url(Korinna-Regular.otf);
+    src: url(fonts/korinna-regular.otf);
 }
 
 @font-face {
     font-family: swiss-911;
-    src: url(swiss-911-extra-compr9c22f.ttf);
+    src: url(fonts/swiss-911.ttf);
 }
 
 #board-container{
@@ -15,6 +15,8 @@
     justify-content: center;
     align-items: center;
     text-shadow: 1px 1px black;
+    color: white;
+    font-family: korinna ,Arial, Helvetica, sans-serif;
 }
 
 #category-container{
@@ -43,8 +45,6 @@
     width: 16%;
     text-align: center;
     background-color: rgb(14, 10, 241);
-    color: white;
-    font-family: korinna ,Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     flex-grow: 1;
     border: 3px solid black;
@@ -54,4 +54,17 @@
     color:rgb(223, 191, 13);
     font-family: swiss-911 ,Arial, Helvetica, sans-serif;
     font-size: 2em;
+}
+
+.fill-board {
+    height: 100%;
+    width: 100%;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill-board p{
+    max-width: 50%;
 }
