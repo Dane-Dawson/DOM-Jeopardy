@@ -1,23 +1,32 @@
-// console.log("running index.js script")
-// console.log(jeopardyQuestions)
-
 document.addEventListener("DOMContentLoaded", () => {
-
     jeopardyQuestions.map(question => createTiles(question))
+    jeopardyCategories.map(cateory => renderCategries(cateory))
 });
 
+function renderCategries(category){
+    const categoryContainer = document.querySelector("#category-container");
+    
+    const tile = document.createElement("div");
+    tile.className = "tile";
+
+    const categoryName = document.createElement("p");
+    categoryName.innerText = category;
+    
+    tile.appendChild(categoryName);
+    categoryContainer.appendChild(tile);
+}
+
 function createTiles(question) {
-    // console.log(question)
     const board = document.querySelector("#jeopardy-board");
 
     const tile = document.createElement("div");
     tile.className = "tile";
 
     const value = document.createElement("p");
-    value.innerText = question.value;
+    value.className = "value";
+    value.innerText = "$" + question.value;
 
     value.addEventListener("click", () => {
-        console.log(question)
         value.remove();
 
         const prompt = document.createElement("p");
@@ -31,7 +40,6 @@ function createTiles(question) {
             tile.appendChild(answer);
 
         })
-
         tile.appendChild(prompt);
     })
     tile.appendChild(value);

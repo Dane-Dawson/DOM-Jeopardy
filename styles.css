@@ -1,8 +1,31 @@
+@font-face {
+    font-family: korinna;
+    src: url(Korinna-Regular.otf);
+}
+
+@font-face {
+    font-family: swiss-911;
+    src: url(swiss-911-extra-compr9c22f.ttf);
+}
+
 #board-container{
     height: 85vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-shadow: 1px 1px black;
+}
+
+#category-container{
+    display: flex;
+    width: 75vw;
+    color: white;
+}
+
+#category-container .tile{
+    height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #jeopardy-board{
@@ -15,22 +38,20 @@
     padding: 2px;
 }
 
-.cat-col{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.tile.category{
-    border-bottom: 5px solid black;
-}
-
 .tile{
-    position: relative;
     height: 16%;
     width: 16%;
     text-align: center;
     background-color: rgb(14, 10, 241);
+    color: white;
+    font-family: korinna ,Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     flex-grow: 1;
     border: 3px solid black;
+}
+
+.value{
+    color:rgb(223, 191, 13);
+    font-family: swiss-911 ,Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
