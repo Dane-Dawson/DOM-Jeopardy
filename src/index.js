@@ -41,6 +41,15 @@ function createTiles(question) {
             const answer = document.createElement("p");
             answer.innerText = question.answer;
             tile.appendChild(answer);
+
+            answer.addEventListener("click", () => {
+                toggleHideCategories();
+                console.log(tile)
+                tile.className = "tile";
+                tile.style.display = "block";
+                tile.innerText= "";
+                toggleHideAllTiles(); 
+            })
         })
         tile.appendChild(prompt);
         toggleTile(tile)
