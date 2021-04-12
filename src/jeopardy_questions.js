@@ -1,3 +1,11 @@
+const jeopardyCategories = [
+  "prehistoric times",
+  "batman tv villains",
+  "let's eat",
+  "you need a drink",
+  "animated creatures",
+  "celebrity lipsticks"
+]
 
 const jeopardyQuestions = [
   {
@@ -211,3 +219,5 @@ const jeopardyQuestions = [
     "answer": "Scrubs",
   }
 ]
+
+
